@@ -1,3 +1,3 @@
-const Category = require("./models/Category");
+const Course = require("./models/Course");
 
-console.log("Category Model Created Successfully");
+console.log("Course Model Created Successfully");
