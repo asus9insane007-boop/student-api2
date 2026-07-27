@@ -1,3 +1,3 @@
-const Course = require("./models/Course");
+const Enrollment = require("./models/Enrollment");
 
-console.log("Course Model Created Successfully");
+console.log("Enrollment Model Created Successfully");
