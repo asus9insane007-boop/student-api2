@@ -2,11 +2,27 @@ const express = require("express");
 const router = express.Router();
 
 const {
-  enrollCourse,
-  getEnrollments,
+  enrollStudent,
+  getStudentEnrollments,
+  getCourseStudents,
+  removeEnrollment
 } = require("../controllers/enrollmentController");
 
-router.post("/", enrollCourse);
-router.get("/", getEnrollments);
+router.post("/", enrollStudent);
+
+router.get(
+  "/student/:studentId",
+  getStudentEnrollments
+);
+
+router.get(
+  "/course/:courseId",
+  getCourseStudents
+);
+
+router.delete(
+  "/:id",
+  removeEnrollment
+);
 
 module.exports = router;
